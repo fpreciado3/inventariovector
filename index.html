@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Control de Inventario</title>
+</head>
+
+<body>
+  <div class="header">
+    <h1>App para control de inventarios</h1>
+  </div>
+
+  <div class="content">
+    <div>
+      <h2>Manejo de los productos</h2>
+      <div class="content-info">
+        <form>
+          <div class="field">
+            <label>Código:</label>
+            <input id="code" type="number">
+          </div>
+          <div class="field">
+            <label>Nombre:</label>
+            <input id="name" type="text" size=35>
+          </div>
+          <div class="field">
+            <label>Cantidad:</label>
+            <input id="quantity" type="number">
+          </div>
+          <div class="field">
+            <label>Costo:</label>
+            <input id="cost" type="number">
+          </div>
+          <div class="field">
+            <label>Posicion:</label>
+            <input id="pos" type="number">
+          <div class="fieldButton">
+            <input id="btnAdd" type="button" value="Agregar">
+          </div>
+          <div class="field">
+            <label></label>
+            <input id="deleteCode" type="number">
+            </div>
+          <div class ="fieldButton">
+            <input id="btnDelete" type="button" value="Eliminar">
+          </div>
+          <div class="field">
+            <input id="searchCode" type="number">
+          </div>
+          <div class="fieldButton">
+            <input id="btnSearch" type="button" value="Buscar">
+          </div>
+          <div class ="fieldButton">
+            <input id="btnList" type="button" value="Listar">
+          </div>
+          <div class ="fieldButton">
+            <input id="btnListI" type="button" value="Listar (inverso)">
+          </div>
+          <div class ="fieldButton">
+            <input id="btnInsert" type="button" value="Insertar">
+          </div>
+        </form>
+      </div>
+    </div>
+    <div>
+      <div class="content-info">
+        <table id="table">
+          <tr>
+            <th>Código</th>
+            <th>Nombre</th>
+            <th>Cantidad</th>
+            <th>Costo</th>
+            <th>Total</th>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td id="tOrder">0</td>
+          </tr>
+        </table>
+      </div>
+      <div class="content-info" id="search">
+      </div>
+      <div class="content-info" id="list">
+      </div>
+    </div>
+  </div>
+  <script src="main.js" type="module"></script>
+</body>
+
+</html>
